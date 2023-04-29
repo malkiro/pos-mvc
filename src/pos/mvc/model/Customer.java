@@ -1,29 +1,29 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pos.mvc.model;
 
 /**
  *
- * @author PC
+ * @author anjanathrishakya
  */
 public class Customer {
+    
     private int id;
     private String name;
-    private String email;
     private String address;
+    private String email;
     private String postalCode;
-    
-    public Customer(){
+
+    public Customer() {
     }
 
-    public Customer(int id, String name, String email, String address, String postalCode) {
+    public Customer(int id, String name, String address, String email, String postalCode) {
         this.id = id;
         this.name = name;
-        this.email = email;
         this.address = address;
+        this.email = email;
         this.postalCode = postalCode;
     }
 
@@ -56,20 +56,6 @@ public class Customer {
     }
 
     /**
-     * @return the email
-     */
-    public String getEmail() {
-        return email;
-    }
-
-    /**
-     * @param email the email to set
-     */
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    /**
      * @return the address
      */
     public String getAddress() {
@@ -81,6 +67,20 @@ public class Customer {
      */
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    /**
+     * @return the email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * @param email the email to set
+     */
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     /**
@@ -99,8 +99,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" + "id=" + id + ", name=" + name + ", email=" + email + ", address=" + address + ", postalCode=" + postalCode + '}';
+        return "Customer{" + "id=" + id + ", name=" + name + ", address=" + address + ", email=" + email + ", postalCode=" + postalCode + '}';
     }
-    
-    
+   
 }
