@@ -36,6 +36,7 @@ public class CustomerController {
         } else{
             return "Fail";
         } 
+
     }
     
     public List<Customer> getCustomers() throws SQLException{
